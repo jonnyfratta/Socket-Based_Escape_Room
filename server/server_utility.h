@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <sys/wait.h>
 
-#include "scenario.h"
+#include "../scenario/scenario.h"
 
 struct game game;
 fd_set master;
