@@ -53,7 +53,7 @@ As for defeat, it can occur due to the use of the second Easter egg, the use of 
 
 
 ## Development
-I developed this project and the corresponding makefile in Linux OS so if you try to run it in a different OS it probably give you errors.
+I developed this project and the corresponding makefile in Linux OS so if you try to run it in a different OS it probably give you errors. It's the result of a project assignment I had to do for my "Reti Informatiche" course at my bachelor's degree in Computer Engineering
 
 From an implementation standpoint, I used I/O multiplexing to manage the sockets of the various players participating simultaneously in the same game. Data exchange occurs through the use of send and receive primitives with blocking sockets. I made this decision because I consider I/O multiplexing to be more intuitive and believe that the workload is not so high as to make this approach disadvantageous compared to a concurrent server implementation. Nonetheless, I acknowledge that this approach is more demanding due to the need to actively monitor the various sets, but I believe this is a negligible drawback under these conditions. Regarding the blocking sockets, the choice was made because all the functions in my code would not have other operations to perform in the absence of the exchanged data.
 
